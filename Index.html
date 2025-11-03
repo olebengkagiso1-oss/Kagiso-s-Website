@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Restaurant Webpage</title>
+<style>
+  /* Reset some default styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+  }
+
+  /* Top icon section */
+  .icon-section {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+  }
+
+  /* Logo image styling */
+  .logo-image {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  /* Navigation buttons container */
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #fff;
+  }
+
+  /* Individual buttons */
+  .nav-button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #ffe0b2;
+    border: 1px solid #cc7a00;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+
+  /* Hover effect for buttons */
+  .nav-button:hover {
+    background-color: #ffcc80;
+  }
+
+  /* Main image or content area */
+  .main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Content padding */
+  .content {
+    padding: 20px;
+  }
+
+  /* About Us Section */
+  #about-us {
+    padding: 40px 20px;
+    background-color: #fafafa;
+    text-align: center;
+  }
+
+  #about-us h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+  }
+
+  #about-us p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  }
+
+  /* Gallery Styles */
+  #gallery {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  #gallery h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Icon Section with Image -->
+  <div class="icon-section">
+    <img src="logo.png" alt="Logo" class="logo-image"/>
+  </div>
+
+<div class="nav-buttons">
+    <a href="Index" class="nav-button">HOME</a>
+    <a href="aboutus.html" class="nav-button">ABOUT US</a>
+    <a href="meatcuts.html" class="nav-button">MEAT CUTS</a>
+    <a href="grill menu.html" class="nav-button">GRILL MENU</a>
+    <a href="contacts.html" class="nav-button">CONTACT</a>
+    <a href="login.html" class="nav-button">LOGIN</a>
+</div>
+
+  <!-- Main Image -->
+  <div class="content">
+    <img src="chairs.jpg" class="main-image"/>
+  </div>
+
+  <!-- About Us Section -->
+  <section id="about-us">
+    <h2>About Us</h2>
+    <p>
+      The purpose of creating a web proposal for Magano's company is to establish a strong online presence, attract new customers, enhance brand identity credibility and provide accessible information about the company's services, values and contact channels, all while enabling future scalability and digital marketing integration.
+    </p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Image Gallery</h2>
+    <div class="gallery-grid">
+      <img src="meat.png" alt="Dish 1"/>
+      <img src="grilled-sliced-steak-rib-eye-Y63UC8E-scaled-e1616838880232-300x300.jpg" alt="Dish 2"/>
+      <img src="meat and chips.png" alt="Dish 3"/>
+    </div>
+  </section>
+
+  <!-- New "Our Story & Contact" Section -->
+  <section id="our-story-contact" style="padding: 40px 20px; background-color: #f0f0f0;">
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; max-width: 1200px; margin: 0 auto;">
+      <!-- Our Story Text -->
+      <div style="flex: 1; min-width: 300px;">
+        <h2 style="margin-bottom: 20px;">OUR STORY</h2>
+        <p style="font-size: 14px; line-height: 1.6; color: #333;">
+          Kagiso’s website development is proud to present this web development proposal for Magano's company, a forwarding-thinking organization poised for growth and greater digital visibility. In today’s increasingly connected world, a professionally designed website is more than just an online presence; it is a powerful tool for building credibility, expanding market reach, and engaging customers. At Kagiso’s web development, we specialize in crafting tailored digital experiences that align with our client’s brand values and designing a website that reflects the unique identity of the butcher shop & grill. Our team brings together years of experience in design, development and users experience to deliver a solution that is not only visually compelling but also highly functional and responsive across all devices. The website we envision for Magano’s company will serve as a central hub information, showcasing your services, values and achievements. It will be easy to navigate, optimized for search engines and built on a flexible content management system that allows your team to update content effortlessly. This project is an opportunity to strengthen your online presence, engage with a border audience and support your company’s growth trajectory through a smart, strategic digital platform built to last.
+        </p>
+      </div>
+      <!-- Contact Info -->
+      <div style="flex: 1; min-width: 300px; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+        <h2 style="margin-bottom: 20px;">CONTACT</h2>
+        <p style="margin-bottom: 10px;">
+          <strong>Kagiso V Olebeng</strong><br/>
+          Website Developer
+        </p>
+        <p style="margin-bottom: 10px;">
+          P O Box 7894<br/>
+          Moshupa, Tshimong road<br/>
+          Botswana
+        </p>
+        <p style="margin-bottom: 10px;">
+          <strong>Phone:</strong> +267 78192752
+        </p>
+        <p style="margin-bottom: 10px;">
+          <strong>Email:</strong> Olebengkagiso1@gmail.com
+        </p>
+        <!-- Social Media Icons -->
+        <div style="margin-top: 20px; display: flex; gap: 10px;">
+          <a href="#" style="text-decoration: none;">
+            <img src="Facebook.png" alt="Facebook" style="width:30px; height:30px;">
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <img src="whatsapp.png" alt="WhatsApp" style="width:30px; height:30px;">
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <img src="youtube.png" alt="YouTube" style="width:30px; height:30px;">
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <img src="free-facebook-messenger-icon-2881-thumb.png" alt="Messenger" style="width:30px; height:30px;">
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <img src="twitter.png" alt="Twitter" style="width:30px; height:30px;">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
