@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff8e1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  /* Contact Info Section */
+  .contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  .info-box {
+    background-color: #ffe0b2;
+    padding: 15px;
+    border-radius: 6px;
+    width: 250px;
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+
+  .info-box h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  /* Contact Form */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  button {
+    padding: 12px;
+    background-color: #ffb74d;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #ffa726;
+  }
+
+  @media(max-width: 600px) {
+    .contact-info {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+</head>
+<body>
+  
+
+<div class="container">
+  <h1>Contact Information</h1>
+
+  <!-- Contact Info Section -->
+  <div class="contact-info">
+    <div class="info-box">
+      <h3>Address</h3>
+      <p>P O Box 7894<br>Moshupa, Tshimong road
+Botswana</p>
+    </div>
+    <div class="info-box">
+      <h3>Phone</h3>
+      <p>+267 78192752</p>
+    </div>
+    <div class="info-box">
+      <h3>Email</h3>
+      <p>Olebengkagiso1@gmail.com</p>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <h2 style="text-align:center;">Send Us a Message</h2>
+  <form>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" placeholder="Your message" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+</body>
+</html>
