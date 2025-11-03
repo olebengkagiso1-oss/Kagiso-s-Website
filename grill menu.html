@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Grill Menu - Magano's Company</title>
+<style>
+  /* Reset styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  /* Navigation bar styles */
+  nav {
+    background-color: #333;
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+  }
+
+  nav ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+  }
+
+  /* Main content styles */
+  .container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  /* Section title */
+  h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #444;
+  }
+
+  /* Grill dishes grid */
+  .dish-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  /* Dish card styles */
+  .dish-card {
+    background-color: #fafafa;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+  }
+
+  .dish-card:hover {
+    transform: scale(1.02);
+  }
+
+  .dish-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .dish-info {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .dish-info h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+
+  .dish-info p {
+    font-size: 14px;
+    color: #555;
+    flex-grow: 1;
+  }
+
+  /* Buy button styles */
+  .buy-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+  .buy-button:hover {
+    background-color: #218838;
+  }
+
+  /* Footer styles */
+  footer {
+    background-color: #f4f4f4;
+    padding: 15px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  /* Responsive adjustments */
+  @media(max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+  <ul>
+    <li><a href="Index.html">Home</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+    <li><a href="meatcuts.html">Meat Cuts</a></li>
+    <li><a href="grillmenu.html">Grill Menu</a></li>
+    <li><a href="contacts.html">Contact</a></li>
+    <li><a href="login.html">login</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h2>Our Grill Menu</h2>
+  <div class="dish-grid">
+    <!-- Dish Card 1 -->
+    <div class="dish-card">
+      <img src="hot-grilled-spare-ribs-with-barbecue-sauce-with-fire-ai-generative.jpg" alt="Grilled Ribs"/>
+      <div class="dish-info">
+        <h3>Grilled Ribs</h3>
+        <p>Succulent pork ribs marinated and grilled to perfection, served with a smoky BBQ sauce.</p>
+        <button class="buy-button">Buy</button>
+      </div>
+    </div>
+    <!-- Dish Card 2 -->
+    <div class="dish-card">
+      <img src="baked-appetizing-whole-chicken-with-oranges-cranberries-oven-form-closeup.jpg" alt="Grilled Chicken"/>
+      <div class="dish-info">
+        <h3>Grilled Chicken</h3>
+        <p>Juicy chicken breasts seasoned with herbs and spices, grilled to tender perfection.</p>
+        <button class="buy-button">Buy</button>
+      </div>
+    </div>
+    <!-- Dish Card 3 -->
+    <div class="dish-card">
+      <img src="cooked-meat-with-sauce-wooden-board.jpg" alt="Grilled Steak"/>
+      <div class="dish-info">
+        <h3>Grilled Steak</h3>
+        <p>High-quality beef steak grilled to your preferred doneness, served with sides.</p>
+        <button class="buy-button">Buy</button>
+      </div>
+    </div>
+    <!-- Dish Card 4 -->
+    <div class="dish-card">
+      <img src="high-view-delicious-variety-meat-salad.jpg"Grilled Sausages"/>
+      <div class="dish-info">
+        <h3>Grilled Sausages</h3>
+        <p>Assorted sausages grilled to perfection, served with mustard and relish.</p>
+        <button class="buy-button">Buy</button>
+      </div>
+    </div>
+    <!-- Additional products -->
+    <div class="dish-card">
+      <img src="grilled-lamb-leg-with-vegetables-side-view.jpg" alt="Lamb Shoulder"/>
+      <div class="dish-info">
+        <h3>Grilled Lamb Shoulder</h3>
+        <p>Juicy lamb shoulder marinated with herbs, slowly grilled for rich flavor.</p>
+        <button class="buy-button">Buy</button>
+      </div>
+    </div>
+    <div class="dish-card">
+      <img src="dorado-grilled-dorado-with-bell-pepper-eggplant-tomato-lemonnd-pomegranate-sauce-plate.jpg" alt="Grilled Fish"/>
+      <div class="dish-info">
+        <h3>Grilled Fish</h3>
+        <p>Fresh fish fillets seasoned and grilled, served with lemon and herbs.</p>
+        <button class="buy-button">Buy</button>
+      </div>
+    </div>
+    <div class="dish-card">
+      <img src="pork-chop-steak.jpg" alt="Pork Chops"/>
+      <div class="dish-info">
+        <h3>Pork Chops</h3>
+        <p>Juicy pork chops grilled with a flavorful marinade and served with sides.</p>
+        <button class="buy-button">Buy</button>
+      </div>
+    </div>
+    <div class="dish-card">
+      <img src="shrimp-sauteed-garlic-soy-caramel.jpg" alt="Shrimp Skewers"/>
+      <div class="dish-info">
+        <h3>Shrimp Skewers</h3>
+        <p>Marinated shrimp grilled on skewers, perfect as an appetizer or main.</p>
+        <button class="buy-button">Buy</button>
+      </div>
+    </div>
+    <!-- Add more as needed -->
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 Magano's Company. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
